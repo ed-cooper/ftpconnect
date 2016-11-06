@@ -1,6 +1,5 @@
-# Do not remove this line or mod_rewrite rules and search engine friendly URLs will stop working
+# Edit with caution!
+RewriteEngine on
 RewriteBase /
-<IfModule mod_speling.c>
-  CheckCaseOnly On
-  CheckSpelling Off
-</IfModule>
+RewriteMap insensitive tolower:
+RewriteRule ^[\/]*(.*)$ /${insensitive:$1} [R,L]
