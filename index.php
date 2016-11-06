@@ -24,7 +24,7 @@
         <script src="/assets/js/home.js"></script>
     </head>
     <body>
-        <div class="start">
+        <div id="start">
             <h1>FTP Connect</h1>
             <h2>The simple and free FTP client to use!</h2>
             <h3>Get started:</h3>
@@ -43,6 +43,9 @@
                 </div>
                 <input type="submit" value="Go"/>
             </form>
+        </div>
+        <div id="footer">
+            <a href="/legal">Legal</a>
         </div>
     </body>
 </html>	
