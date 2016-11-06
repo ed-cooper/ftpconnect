@@ -3,6 +3,12 @@
     <head>
         <!-- Page title -->
         <title>FTP Connect</title>
+        
+        <!--Styles-->
+        <link href='/assets/home.css' rel='stylesheet' type='text/css'>
+        
+        <!--Fonts-->
+        <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
     </head>
     <body>
         <div class="start">
