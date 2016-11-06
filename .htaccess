@@ -1,5 +1,4 @@
 # Edit with caution!
-RewriteEngine on
 RewriteBase /
-RewriteMap tolowercase int:tolower 
-RewriteRule ^(.*)$ ${tolowercase:$1}
+CheckSpelling On
+CheckCaseOnly On
