@@ -2,7 +2,26 @@
 <html>
     <head>
         <!-- Title -->
-        <title>Legal</title>
+        <title>FTP Connect - Legal</title>
+        
+        <!-- SEO -->
+        <meta name="description" content="FTP Connect - Legal">
+        <meta name="keywords" content="FTP,free,online,legal">
+        <meta name="author" content="Chooper100">
+        
+        <!-- General meta -->
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        
+        <!-- Styles -->
+        <link href='/assets/css/home.css' rel='stylesheet' type='text/css'>
+        
+        <!-- Fonts -->
+        <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+        
+        <!--Scripts-->
+        <script src="/assets/js/home.js"></script>
     </head>
     <body>
         <h1>Legal</h1>
