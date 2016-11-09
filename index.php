@@ -30,18 +30,18 @@
             <h3>Get started:</h3>
             <form method="post">
                 <div class="input-group">
-                    <label for="txtftphost">FTP Host:</label>
-                    <input type="text" id="txtftphost" />
+                    <label for="txtftphost" class="control-label">FTP Host:</label>
+                    <input type="text" class="form-control" id="txtftphost" name="ftphost" />
                 </div>
                 <div class="input-group">
-                    <label for="txtuser">FTP Username:</label>
-                    <input type="text" id="txtuser" />
+                    <label for="txtuser" class="control-label">FTP Username:</label>
+                    <input type="text" class="form-control" id="txtuser" name="user" />
                 </div>
                 <div class="input-group">
-                    <label for="txtpass">FTP Password:</label>
-                    <input type="password" id="txtpass" />
+                    <label for="txtpass" class="control-label">FTP Password:</label>
+                    <input type="password" class="form-control" id="txtpass" name="pass" />
                 </div>
-                <input type="submit" value="Go"/>
+                <input type="submit" class="btn-submit" value="Go"/>
             </form>
         </div>
         <div id="footer">
