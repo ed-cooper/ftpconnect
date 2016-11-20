@@ -1,4 +1,4 @@
-# Ftp Connect
+# FTP Connect
 Free and simple to use online FTP client
 
 ## Warning
