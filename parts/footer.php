@@ -11,7 +11,7 @@
 </div>
 <style>
     #footer {
-        background-color: #e0e0e0;
+        background-color: #e3dbdb;
         overflow: hidden;
         padding: 5px 10px;
     }
