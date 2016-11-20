@@ -28,21 +28,22 @@
             <h1>FTP Connect</h1>
             <h2>The simple and free FTP client to use!</h2>
             <h3>Get started:</h3>
-            <form method="post">
+            <form method="post" action="test_ftp.php">
                 <div class="input-group">
                     <label for="txtftphost">FTP Host:</label>
-                    <input type="text" id="txtftphost" />
+                    <input type="text" id="txtftphost" name="ftphost"/>
                 </div>
                 <div class="input-group">
                     <label for="txtuser">FTP Username:</label>
-                    <input type="text" id="txtuser" />
+                    <input type="text" id="txtuser" name="user"/>
                 </div>
                 <div class="input-group">
                     <label for="txtpass">FTP Password:</label>
-                    <input type="password" id="txtpass" />
+                    <input type="password" id="txtpass" name="pass"/>
                 </div>
                 <input type="submit" value="Go"/>
             </form>
+            <b>Warning: Currently only uses standard FTP connection over http!</b>
         </div>
         <div id="footer">
             <a href="/legal">Legal</a>
