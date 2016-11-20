@@ -19,6 +19,7 @@
         
         <!-- Fonts -->
         <link href='https://fonts.googleapis.com/css?family=Roboto|Roboto+Slab' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="/assets/css/font-awesome.min.css">
         
         <!--Scripts-->
         <script src="/assets/js/home.js"></script>
@@ -46,7 +47,13 @@
                 <input type="submit" class="btn-submit" value="Go"/>
                 <p>Warning: Currently only uses standard FTP connection over http!</p>
             </form>
+            <div id="start-down-container">
+                <a href="#main">
+                    <i id="start-down" class="fa fa-arrow-circle-o-down" aria-hidden="true"></i>
+                </a>
+            </div>
         </div>
+        <div id="main"></div>
         <?php include $_SERVER['DOCUMENT_ROOT'].'/parts/footer.php'; ?>
     </body>
 </html>	

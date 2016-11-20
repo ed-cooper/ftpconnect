@@ -91,3 +91,21 @@ h3, h4 {
 .btn-submit:hover {
     background-color: #ecf2f4;
 }
+
+#start-down-container {
+    position: absolute;
+    text-align: center;
+    bottom: 0px;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+#start-down {
+    font-size: 60pt;
+    color: #f5f9fb;
+    transition: all 0.2s ease-in;
+}
+
+#start-down:hover {
+    color: #e1e8e9;
+}
