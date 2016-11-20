@@ -30,18 +30,18 @@
             <h3>Get started:</h3>
             <form method="post" action="test_ftp.php">
                 <div class="input-group">
-                    <label for="txtftphost">FTP Host:</label>
-                    <input type="text" id="txtftphost" name="ftphost"/>
+                    <label for="txtftphost" class="control-label">FTP Host:</label>
+                    <input type="text" class="form-control" id="txtftphost" name="ftphost" />
                 </div>
                 <div class="input-group">
-                    <label for="txtuser">FTP Username:</label>
-                    <input type="text" id="txtuser" name="user"/>
+                    <label for="txtuser" class="control-label">FTP Username:</label>
+                    <input type="text" class="form-control" id="txtuser" name="user" />
                 </div>
                 <div class="input-group">
-                    <label for="txtpass">FTP Password:</label>
-                    <input type="password" id="txtpass" name="pass"/>
+                    <label for="txtpass" class="control-label">FTP Password:</label>
+                    <input type="password" class="form-control" id="txtpass" name="pass" />
                 </div>
-                <input type="submit" value="Go"/>
+                <input type="submit" class="btn-submit" value="Go"/>
             </form>
             <b>Warning: Currently only uses standard FTP connection over http!</b>
         </div>
