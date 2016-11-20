@@ -1,0 +1,21 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+}
+
+#header {
+    background-color: #cfd8dc;
+    padding: 10px 20px;
+}
+
+#main {
+    margin: 0 10px;
+}
+
+h1, h2, h3, h4 {
+    font-family: 'Roboto Slab', sans-serif;
+}
+
+h1 {
+    margin: 0;
+}
