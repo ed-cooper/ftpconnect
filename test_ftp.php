@@ -11,6 +11,7 @@ if (!$login_result) {
     die("can't login");
 }
 
+// Output base directory name
 echo ftp_pwd($conn_id); // /
 
 // close the ssl connection
