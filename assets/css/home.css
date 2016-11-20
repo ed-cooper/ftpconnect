@@ -19,11 +19,23 @@ body {
 
 h1, h2, h3, h4 {
     font-family: 'Roboto Slab', sans-serif;
+}
+
+h3, h4 {
     margin: 0;
 }
 
 #start-left {
     float: left;
+    margin-left: 50px;
+}
+
+#start-left h1 {
+    font-size: 40pt;
+}
+
+#start-left h2 {
+    font-size: 20pt;
 }
 
 #start-form {

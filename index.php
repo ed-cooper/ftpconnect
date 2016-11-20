@@ -27,7 +27,7 @@
         <div id="start">
             <div id="start-left">
                 <h1>FTP Connect</h1>
-                <h2>The simple and free FTP client to use!</h2>
+                <h2>The simple and free FTP client for you</h2>
             </div>
             <form method="post" id="start-form" action="test_ftp.php">
                 <h3>Get started:</h3>
