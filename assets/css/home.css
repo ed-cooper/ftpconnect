@@ -3,7 +3,7 @@ html {
 }
 
 body {
-    font-family: 'Roboto Slab', sans-serif;
+    font-family: 'Roboto', sans-serif;
     height: 100%;
     margin: 0;
 }
@@ -17,10 +17,10 @@ body {
     height: 100%;
 }
 
-h1 {
-    margin: 0;
+h1, h2, h3, h4 {
+    font-family: 'Roboto Slab', sans-serif;
 }
 
-.control-label {
-    font-family: 'Roboto', sans-serif;
+h1 {
+    margin: 0;
 }

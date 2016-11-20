@@ -43,7 +43,7 @@
                 </div>
                 <input type="submit" class="btn-submit" value="Go"/>
             </form>
-            <b>Warning: Currently only uses standard FTP connection over http!</b>
+            <h4>Warning: Currently only uses standard FTP connection over http!</h4>
         </div>
         <?php include $_SERVER['DOCUMENT_ROOT'].'/parts/footer.php'; ?>
     </body>
