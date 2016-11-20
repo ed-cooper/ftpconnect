@@ -17,7 +17,7 @@ Therefore, you may wish to use a public FTP server for testing.
 
 http://www.rebex.net/ provide a read-only FTP server free of charge, which you can
 connect to with the following details:
-Host: test.rebex.net
-Port: 21
-Username: demo
-Password: password
+- Host: test.rebex.net
+- Port: 21
+- Username: demo
+- Password: password
