@@ -25,10 +25,12 @@
     </head>
     <body>
         <div id="start">
-            <h1>FTP Connect</h1>
-            <h2>The simple and free FTP client to use!</h2>
-            <h3>Get started:</h3>
-            <form method="post" action="test_ftp.php">
+            <div id="start-left">
+                <h1>FTP Connect</h1>
+                <h2>The simple and free FTP client to use!</h2>
+            </div>
+            <form method="post" id="start-form" action="test_ftp.php">
+                <h3>Get started:</h3>
                 <div class="input-group">
                     <label for="txtftphost" class="control-label">FTP Host:</label>
                     <input type="text" class="form-control" id="txtftphost" name="ftphost" />
@@ -42,8 +44,8 @@
                     <input type="password" class="form-control" id="txtpass" name="pass" />
                 </div>
                 <input type="submit" class="btn-submit" value="Go"/>
+                <p>Warning: Currently only uses standard FTP connection over http!</p>
             </form>
-            <h4>Warning: Currently only uses standard FTP connection over http!</h4>
         </div>
         <?php include $_SERVER['DOCUMENT_ROOT'].'/parts/footer.php'; ?>
     </body>
