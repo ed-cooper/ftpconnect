@@ -6,7 +6,8 @@ This project is still in early development and only a limited set of features
 presently work
 
 ## Pull Requests
-Please be aware that this project is not currently ready to accept pull requests
+I am now happy to begin accepting pull requests. Please be aware that any major changes
+(eg. feature additions) will require discussion before they are accepted.
 
 ## PHP Version
 For now, we are using PHP version 5.6. As the project progresses, this may change.
