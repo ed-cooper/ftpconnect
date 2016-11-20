@@ -45,8 +45,6 @@
             </form>
             <b>Warning: Currently only uses standard FTP connection over http!</b>
         </div>
-        <div id="footer">
-            <a href="/legal">Legal</a>
-        </div>
+        <?php include $_SERVER['DOCUMENT_ROOT'].'/parts/footer.php'; ?>
     </body>
 </html>	
