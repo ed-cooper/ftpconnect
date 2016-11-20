@@ -18,7 +18,7 @@
         <link href='/assets/css/home.css' rel='stylesheet' type='text/css'>
         
         <!-- Fonts -->
-        <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+        <link href='https://fonts.googleapis.com/css?family=Roboto|Roboto+Slab' rel='stylesheet' type='text/css'>
         
         <!--Scripts-->
         <script src="/assets/js/home.js"></script>
