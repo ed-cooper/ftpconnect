@@ -1,3 +1,22 @@
+html {
+    height: 100%;
+}
+
 body {
     font-family: 'Roboto', sans-serif;
+    height: 100%;
+    margin: 0;
+}
+
+#start {
+    background-color: #cfd8dc;
+    background-image: url(/assets/img/programmer.svg);
+    background-size: 50%;
+    background-repeat: no-repeat;
+    background-position: left bottom;
+    height: 100%;
+}
+
+h1 {
+    margin: 0;
 }
