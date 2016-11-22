@@ -15,13 +15,13 @@
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         
         <!-- Styles -->
-        <link href='/assets/css/legal.css' rel='stylesheet' type='text/css'>
+        <link href='/assets/css/generic.css' rel='stylesheet' type='text/css'>
         
         <!-- Fonts -->
         <link href='https://fonts.googleapis.com/css?family=Roboto|Roboto+Slab' rel='stylesheet' type='text/css'>
         
         <!--Scripts-->
-        <script src="/assets/js/home.js"></script>
+        <script src="/assets/js/generic.js"></script>
     </head>
     <body>
         <div id="header">
