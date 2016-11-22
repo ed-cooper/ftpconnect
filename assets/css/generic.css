@@ -19,3 +19,9 @@ h1, h2, h3, h4 {
 h1 {
     margin: 0;
 }
+
+.caption {
+    color: #666;
+    font-size: 11pt;
+    margin: 5px 0;
+}

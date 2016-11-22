@@ -1,6 +1,8 @@
 <h2>
     Sorry, but it looks like this page has been eaten by an evil kumquat.
 </h2>
+<img src="/assets/img/evil-kumquat.jpg" alt="Evil kumquat" />
+<p class="caption">Evil kumquat</p>
 <h3>What you can do:</h3>
 <ul>
     <li>Run and scream for help</li>
