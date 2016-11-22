@@ -1,6 +1,9 @@
 # Edit with caution!
 RewriteBase /
 
+#Disable default index pages on directories
+Options -Indexes
+
 #URL Rewrite
 Options +FollowSymlinks
 RewriteEngine on
