@@ -77,6 +77,7 @@ RewriteEngine on
 #Generic pages
 RewriteRule ^legal generic.php?resource=legal [NC,L]
 RewriteRule ^privacy-policy generic.php?resource=privacy-policy [NC,L]
+RewriteRule ^contact-us generic.php?resource=contact-us [NC,L]
 
 #Redirect to non-www version of site
 RewriteCond %{HTTP_HOST} ^www.ftpconnect.tk [NC]

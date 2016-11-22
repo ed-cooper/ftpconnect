@@ -4,6 +4,9 @@
             <a href="/">Home</a>
         </li>
         <li>
+            <a href="/contact-us">Contact</a>
+        </li>
+        <li>
             <a href="/legal">Legal</a>
         </li>
         <li>
