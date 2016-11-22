@@ -1,17 +1,13 @@
 <h2>
     Sorry, but it looks like this page has been eaten by an evil kumquat.
 </h2>
-<p>
-    <b>What you can do:</b>
-</p>
+<h3>What you can do:</h3>
 <ul>
     <li>Run and scream for help</li>
     <li>Hide behind the sofa</li>
     <li>Activate the kumquat swatter</li>
 </ul>
-<p>
-    <b>Alternatively, you can:</b>
-</p>
+<h3>Alternatively, you can:</h3>
 <ul>
     <li>Check you didn't mis-type</li>
     <li>Check your URL is all lowercase - URLs are CaSe SeNsItIve</li>
