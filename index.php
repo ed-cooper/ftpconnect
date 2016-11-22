@@ -25,7 +25,7 @@
         <script src="/assets/js/home.js"></script>
     </head>
     <body>
-        <?php include_once("analyticstracking.php") ?>
+        <?php include_once($_SERVER['DOCUMENT_ROOT'].'/parts/analyticstracking.php') ?>
         <div id="start">
             <div id="start-left">
                 <h1>FTP Connect</h1>

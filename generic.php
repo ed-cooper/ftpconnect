@@ -28,7 +28,7 @@ $displayname = ucwords(str_replace("-", " ", $_GET['resource']));
         <script src="/assets/js/generic.js"></script>
     </head>
     <body>
-        <?php include_once("analyticstracking.php") ?>
+        <?php include_once($_SERVER['DOCUMENT_ROOT'].'/parts/analyticstracking.php') ?>
         <div id="header">
             <h1>
                 <?php 
