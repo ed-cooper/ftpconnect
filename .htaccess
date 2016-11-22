@@ -6,6 +6,7 @@ Options -Indexes
 
 #Specify error pages
 ErrorDocument 404 /generic.php?resource=404-file-not-found
+ErrorDocument 403 /generic.php?resource=403-forbidden
 
 #G-Zip compression
 <ifmodule mod_deflate.c>
