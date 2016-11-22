@@ -17,6 +17,8 @@
         background-color: #e3dbdb;
         overflow: hidden;
         padding: 5px 10px;
+        width: 100%;
+        box-sizing: border-box;
     }
     
     #footer-nav {
@@ -47,3 +49,10 @@
         font-size: 11pt;
     }
 </style>
+<script>
+    var footer = document.getElementById("footer");
+    if (footer.getBoundingClientRect().bottom < window.innerHeight) {
+        footer.style.position = "absolute";
+        footer.style.bottom = 0;
+    }
+</script>
