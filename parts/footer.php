@@ -6,6 +6,9 @@
         <li>
             <a href="/legal">Legal</a>
         </li>
+        <li>
+            <a href="/privacy-policy">Privacy Policy</a>
+        </li>
     </ul>
     <span id="copyright">&copy Chooper100, 2016</span>
 </div>
@@ -24,7 +27,7 @@
     
     #footer-nav li {
         float: left;
-        width: 80px;
+        margin-right: 40px;
     }
     
     #footer-nav li a {
