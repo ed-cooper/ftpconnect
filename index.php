@@ -2,7 +2,7 @@
 <html>
     <head>
         <!-- Page title -->
-        <title>FTP Connect</title>
+        <title>FTP Connect - The simple and free FTP client for you</title>
         
         <!-- SEO -->
         <meta name="description" content="FTP Connect, the free, online FTP client designed for you">
