@@ -1,7 +1,7 @@
 <p>
-    Have an issue or feature request?
+    Have an issue or feature request? Or are you in need of support?
 </p>
 </p>
-    Send me an email at
-    <a href="mailto:chooper100.scratch@gmail.com">chooper100.scratch@gmail.com</a>
+    Send us an email at
+    <a href="mailto:contact@ftpconnect.tk">contact@ftpconnect.tk</a>
 </p>
