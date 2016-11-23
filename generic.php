@@ -25,7 +25,7 @@ $displayname = ucwords(str_replace("-", " ", $_GET['resource']));
         <link href='https://fonts.googleapis.com/css?family=Roboto|Roboto+Slab' rel='stylesheet' type='text/css'>
         
         <!--Scripts-->
-        <script src="/assets/js/generic.js" async></script>
+        <!--<script src="/assets/js/generic.js" async></script>-->
     </head>
     <body>
         <?php include_once($_SERVER['DOCUMENT_ROOT'].'/parts/analyticstracking.php') ?>
