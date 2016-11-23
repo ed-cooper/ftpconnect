@@ -5,7 +5,7 @@
         <title>FTP Connect - The free and simple FTP client for you</title>
         
         <!-- SEO -->
-        <meta name="description" content="FTP Connect, the free, online FTP client designed for you">
+        <meta name="description" content="FTP Connect - The free and simple FTP client for you">
         <meta name="keywords" content="FTP,free,online,FTP client">
         <meta name="author" content="Chooper100">
         
