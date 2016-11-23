@@ -9,7 +9,7 @@ $displayname = ucwords(str_replace("-", " ", $_GET['resource']));
         <title>FTP Connect - <?php echo $displayname ?></title>
         
         <!-- SEO -->
-        <meta name="description" content="FTP Connect - Legal">
+        <meta name="description" content="FTP Connect - <?php echo $displayname ?>">
         <meta name="keywords" content="FTP,free,online,legal">
         <meta name="author" content="Chooper100">
         
