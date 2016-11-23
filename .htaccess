@@ -74,11 +74,11 @@ AddOutputFilterByType DEFLATE text/text text/html text/plain text/xml text/css a
 Options +FollowSymlinks
 RewriteEngine on
 
+#Redirect to non-www version of site
+RewriteCond %{HTTP_HOST} ^www.ftpconnect.tk [NC]
+RewriteRule ^(.*)$ http://ftpconnect.tk/$1 [L,R=301]
+
 #Generic pages
 RewriteRule ^legal generic.php?resource=legal [NC,L]
 RewriteRule ^privacy-policy generic.php?resource=privacy-policy [NC,L]
 RewriteRule ^contact-us generic.php?resource=contact-us [NC,L]
-
-#Redirect to non-www version of site
-RewriteCond %{HTTP_HOST} ^www.ftpconnect.tk [NC]
-RewriteRule ^(.*)$ http://ftpconnect.tk/$1 [L,R=301]
