@@ -2,7 +2,7 @@
 <html>
     <head>
         <!-- Page title -->
-        <title>FTP Connect - The simple and free FTP client for you</title>
+        <title>FTP Connect - The free and simple FTP client for you</title>
         
         <!-- SEO -->
         <meta name="description" content="FTP Connect, the free, online FTP client designed for you">
@@ -29,7 +29,7 @@
         <div id="start">
             <div id="start-left">
                 <h1>FTP Connect</h1>
-                <h2>The simple and free FTP client for you</h2>
+                <h2>The free and simple FTP client for you</h2>
             </div>
             <form method="post" id="start-form" action="test_ftp.php">
                 <h3>Get started:</h3>
