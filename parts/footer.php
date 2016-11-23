@@ -80,7 +80,7 @@
 </style>
 <script>
     var footer = document.getElementById("footer");
-    if (footer.getBoundingClientRect().bottom < window.innerHeight) {
+    if (footer.getBoundingClientRect().bottom + window.pageYOffset < window.innerHeight) {
         footer.style.position = "absolute";
         footer.style.bottom = 0;
     }
