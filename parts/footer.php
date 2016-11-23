@@ -1,27 +1,53 @@
 <div id="footer">
-    <ul id="footer-nav">
-        <li>
-            <a href="/">Home</a>
-        </li>
-        <li>
-            <a href="/contact-us">Contact</a>
-        </li>
-        <li>
-            <a href="/legal">Legal</a>
-        </li>
-        <li>
-            <a href="/privacy-policy">Privacy Policy</a>
-        </li>
-    </ul>
-    <span id="copyright">&copy Chooper100, 2016</span>
+    <div id="footer-top">
+        <a href="/" id="footer-name">FTP Connect</a>
+    </div>
+    <div id="footer-bottom">
+        <ul id="footer-nav">
+            <li>
+                <a href="/">Home</a>
+            </li>
+            <li>
+                <a href="/contact-us">Contact</a>
+            </li>
+            <li>
+                <a href="/legal">Legal</a>
+            </li>
+            <li>
+                <a href="/privacy-policy">Privacy Policy</a>
+            </li>
+        </ul>
+        <span id="copyright">&copy Chooper100, 2016</span>
+    </div>
 </div>
 <style>
     #footer {
         background-color: #e3dbdb;
         overflow: hidden;
-        padding: 5px 10px;
         width: 100%;
         box-sizing: border-box;
+    }
+    
+    #footer-top {
+        padding: 10px 15px;
+    }
+    
+    #footer-name {
+        font-weight: 200;
+        color: #555;
+        text-decoration: none;
+        margin: 5px 0;
+        display: inline-block;
+    }
+    
+    #footer-name:hover {
+        font-weight: 900;
+    }
+    
+    #footer-bottom {
+        padding: 10px 15px;
+        border-top: 1px solid #bbb;
+        overflow: hidden;
     }
     
     #footer-nav {
