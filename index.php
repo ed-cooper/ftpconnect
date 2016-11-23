@@ -22,7 +22,7 @@
         <link rel="stylesheet" href="/assets/css/font-awesome.min.css">
         
         <!--Scripts-->
-        <script src="/assets/js/home.js"></script>
+        <script src="/assets/js/home.js" async></script>
     </head>
     <body>
         <?php include_once($_SERVER['DOCUMENT_ROOT'].'/parts/analyticstracking.php') ?>
