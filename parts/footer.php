@@ -8,13 +8,13 @@
                 <a href="/">Home</a>
             </li>
             <li>
-                <a href="/contact-us">Contact</a>
+                <a href="/contact-us/">Contact</a>
             </li>
             <li>
-                <a href="/legal">Legal</a>
+                <a href="/legal/">Legal</a>
             </li>
             <li>
-                <a href="/privacy-policy">Privacy Policy</a>
+                <a href="/privacy-policy/">Privacy Policy</a>
             </li>
         </ul>
         <span id="copyright">&copy Chooper100, 2016</span>
