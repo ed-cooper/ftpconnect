@@ -39,7 +39,7 @@
     
     .control-label {
         font-family: "roboto slab", sans-serif;
-        font-size: 14pt;
+        font-size: 12pt;
         font-weight: bold;
         margin: 5px 0;
         display: block;
