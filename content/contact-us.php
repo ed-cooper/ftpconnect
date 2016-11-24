@@ -8,6 +8,10 @@
 </p>
 <form id="emailform" method="post" action="/sendmail.php">
     <div class="input-group">
+        <label class="control-label" for="emailform-name">Name:</label>
+        <input type="text" class="form-control" name="name" id="emailform-name" />
+    </div>
+    <div class="input-group">
         <label class="control-label" for="emailform-email">Email:</label>
         <input type="email" class="form-control" name="email" id="emailform-email" />
     </div>

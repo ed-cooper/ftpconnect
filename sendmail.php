@@ -4,13 +4,14 @@ require 'phpmailer/PHPMailerAutoload.php';
 $mail = new PHPMailer;
 
 $mail->setFrom('contact@ftpconnect.tk', 'FTP Connect'); // From email must be a ftpconnect.tk email
-$mail->addReplyTo($_POST['email'], 'Test');
-$mail->addAddress('contact@ftpconnect.tk', 'FTP Connect');     // Add a recipient
+$mail->addReplyTo($_POST['email'], $_POST['name']);
+$mail->addAddress('contact@ftpconnect.tk', 'FTP Connect');
 
-$mail->isHTML(false);                                  // Set email format to HTML
+// Don't use HTML (to avoid script injection)
+$mail->isHTML(false);
 
-$mail->Subject = 'Here is the subject';
-$mail->Body    = 'This is the HTML message body';
+$mail->Subject = $_POST['subject'];
+$mail->Body    = $_POST['message'];
 
 if(!$mail->send()) {
     echo 'Message could not be sent.';
