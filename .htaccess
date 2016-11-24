@@ -79,6 +79,6 @@ RewriteCond %{HTTP_HOST} ^www.ftpconnect.tk [NC]
 RewriteRule ^(.*)$ http://ftpconnect.tk/$1 [L,R=301]
 
 #Generic pages
-RewriteRule ^legal/$ generic.php?resource=legal [NC,L]
-RewriteRule ^privacy-policy/$ generic.php?resource=privacy-policy [NC,L]
-RewriteRule ^contact-us/$ generic.php?resource=contact-us [NC,L]
+RewriteRule ^legal/?$ generic.php?resource=legal [NC,L]
+RewriteRule ^privacy-policy/?$ generic.php?resource=privacy-policy [NC,L]
+RewriteRule ^contact-us/?$ generic.php?resource=contact-us [NC,L]
