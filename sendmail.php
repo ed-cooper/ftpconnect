@@ -3,8 +3,9 @@ require 'phpmailer/PHPMailerAutoload.php';
 
 $mail = new PHPMailer;
 
-$mail->setFrom('contact@ftpconnect.tk', 'Mailer');
-$mail->addAddress('chooper100.scratch@gmail.com', 'Joe User');     // Add a recipient
+$mail->setFrom('contact@ftpconnect.tk', 'FTP Connect'); // From email must be a ftpconnect.tk email
+$mail->addReplyTo($_POST['email'], 'Test');
+$mail->addAddress('contact@ftpconnect.tk', 'FTP Connect');     // Add a recipient
 
 $mail->isHTML(false);                                  // Set email format to HTML
 
