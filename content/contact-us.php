@@ -21,7 +21,7 @@
     </div>
     <div class="input-group">
         <label class="control-label" for="emailform-message">Message:</label>
-        <textarea class="form-control" name="message" id="emailform-message"></textarea>
+        <textarea class="form-control" name="message" id="emailform-message" rows="4"></textarea>
     </div>
     <input type="submit" class="btn-submit" value="Send" />
 </form>
@@ -30,6 +30,7 @@
         background-color: #e1e8e9;
         border-radius: 3px;
         padding: 10px 20px;
+        margin-bottom: 20px;
     }
     
     .input-group {
@@ -52,6 +53,12 @@
         border: none;
         border-radius: 3px;
         padding: 7px;
+        outline: 0;
+        transition: all 0.2s ease-in;
+    }
+    
+    .form-control:focus {
+        background-color: #ecf2f4;
     }
     
     .btn-submit {
@@ -59,5 +66,11 @@
         border: none;
         border-radius: 3px;
         padding: 7px 17px;
+        margin-bottom: 10px;
+        transition: all 0.2s ease-in;
+    }
+    
+    .btn-submit:hover {
+        background-color: #ecf2f4;
     }
 </style>
