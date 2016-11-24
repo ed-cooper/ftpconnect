@@ -3,9 +3,9 @@ require 'phpmailer/PHPMailerAutoload.php';
 
 $mail = new PHPMailer;
 
-$mail->setFrom('contact@ftpconnect.tk', 'FTP Connect'); // From email must be a ftpconnect.tk email
-$mail->addReplyTo($_POST['email'], $_POST['name']);
-$mail->addAddress('contact@ftpconnect.tk', 'FTP Connect');
+$mail->Sender = 'contact@ftpconnect.tk';
+$mail->setFrom($_POST['email'], $_POST['name']);
+$mail->addAddress('contact@ftpconnect.tk', 'FTP Connect Contact Team');
 
 // Don't use HTML (to avoid script injection)
 $mail->isHTML(false);
