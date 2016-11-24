@@ -14,7 +14,7 @@ WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the
 License for the specific language governing permissions and limitations under
 the License.
 
-=======================================================================
+========================================================================
 FTP Connect Subcomponents:
 
 The FTP Connect project contains subcomponents with separate copyright
@@ -27,3 +27,9 @@ For Font Awesome (assets/css/font.awesome.min.css):
 ========================================================================
 
 See http://fontawesome.io/license
+
+========================================================================
+Fot PHPMailer (phpmailer/):
+========================================================================
+
+See phpmailer/LICENSE
