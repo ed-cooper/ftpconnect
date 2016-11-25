@@ -54,7 +54,8 @@
         border-radius: 3px;
         padding: 7px;
         outline: 0;
-        transition: all 0.2s ease-in;
+        transition: background-color 0.2s ease-in;
+        font-family: 'Roboto', sans-serif;
     }
     
     .form-control:focus {
