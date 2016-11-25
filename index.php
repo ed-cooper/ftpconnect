@@ -54,7 +54,14 @@
                 </a>
             </div>
         </div>
-        <div id="main"></div>
+        <div id="main">
+            <div id="warning">
+                <i class="fa fa-exclamation-triangle" aria-hidden="true"></i>
+                <b>Warning - Early access project:</b>
+                This project could contain broken or missing features
+            </div>
+            
+        </div>
         <?php include $_SERVER['DOCUMENT_ROOT'].'/parts/footer.php'; ?>
     </body>
 </html>	

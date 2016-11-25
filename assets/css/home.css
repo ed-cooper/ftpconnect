@@ -111,3 +111,9 @@ h3, h4 {
 #start-down:hover {
     color: #e1e8e9;
 }
+
+#warning {
+    background-color: #ff3300;
+    color: white;
+    padding: 10px 20px;
+}
