@@ -25,3 +25,9 @@ h1 {
     font-size: 11pt;
     margin: 5px 0;
 }
+
+@media (max-width: 768px) {
+    #main {
+        margin: 0 10px;
+    }
+}
