@@ -98,5 +98,5 @@
                 footer.style.bottom = 0;
             }
         }
-    }​
+    };
 </script>
