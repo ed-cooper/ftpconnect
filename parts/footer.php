@@ -80,6 +80,13 @@
         color: #666;
         font-size: 11pt;
     }
+    
+    @media (max-width: 768px) {
+        #footer-nav li {
+            float: none;
+            margin: 7px 0;
+        }
+    }
 </style>
 <script>
     document.onreadystatechange = function () {
