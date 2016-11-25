@@ -59,7 +59,8 @@
     order to track and monitor your engagement and usage of the
     website, but will not store, save or collect personal
     information. You can read Google's privacy policy here for
-    further information [ http://www.google.com/privacy.html ].
+    further information
+    [ <a href="http://www.google.com/privacy.html">http://www.google.com/privacy.html</a> ].
 </p>
 <p>
     Other cookies may be stored to your computers hard drive by
