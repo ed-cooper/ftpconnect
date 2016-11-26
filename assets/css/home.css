@@ -117,3 +117,32 @@ h3, h4 {
     color: white;
     padding: 10px 20px;
 }
+
+@media (max-width: 768px) {
+    #start {
+        height: auto;
+        overflow: hidden;
+        background-image: none;
+    }
+    
+    #start-left {
+        margin: 0 20px;
+    }
+    
+    #start-left h1 {
+        margin: 20px 0;
+    }
+    
+    #start-form {
+        position: static;
+        max-width: none;
+        width: 100%;
+        box-sizing: border-box;
+        border: 10px solid #cfd8dc;
+        border-radius: 15px;
+    }
+    
+    #start-down {
+        display: none;
+    }
+}
