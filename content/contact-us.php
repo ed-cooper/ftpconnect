@@ -7,19 +7,19 @@
     or use the form below:
 </p>
 <form id="emailform" method="post" action="/sendmail.php">
-    <div class="input-group">
+    <div class="form-group">
         <label class="control-label" for="emailform-name">Name:</label>
         <input type="text" class="form-control" name="name" id="emailform-name" />
     </div>
-    <div class="input-group">
+    <div class="form-group">
         <label class="control-label" for="emailform-email">Email:</label>
         <input type="email" class="form-control" name="email" id="emailform-email" />
     </div>
-    <div class="input-group">
+    <div class="form-group">
         <label class="control-label" for="emailform-subject">Subject:</label>
         <input type="text" class="form-control" name="subject" id="emailform-subject" />
     </div>
-    <div class="input-group">
+    <div class="form-group">
         <label class="control-label" for="emailform-message">Message:</label>
         <textarea class="form-control" name="message" id="emailform-message" rows="4"></textarea>
     </div>
@@ -33,7 +33,7 @@
         margin-bottom: 20px;
     }
     
-    .input-group {
+    .form-group {
         margin-bottom: 10px;
     }
     

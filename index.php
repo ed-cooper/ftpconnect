@@ -34,15 +34,15 @@
             </div>
             <form method="post" id="start-form" action="test_ftp.php">
                 <h3>Get started:</h3>
-                <div class="input-group">
+                <div class="form-group">
                     <label for="txtftphost" class="control-label">FTP Host:</label>
                     <input type="text" class="form-control" id="txtftphost" name="ftphost" />
                 </div>
-                <div class="input-group">
+                <div class="form-group">
                     <label for="txtuser" class="control-label">FTP Username:</label>
                     <input type="text" class="form-control" id="txtuser" name="user" />
                 </div>
-                <div class="input-group">
+                <div class="form-group">
                     <label for="txtpass" class="control-label">FTP Password:</label>
                     <input type="password" class="form-control" id="txtpass" name="pass" />
                 </div>
