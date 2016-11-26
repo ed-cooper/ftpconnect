@@ -1,7 +1,7 @@
 <p>
     Have an issue, feature request, or are you in need of some support?
 </p>
-</p>
+<p>
     Send us an email at
     <a href="mailto:contact@ftpconnect.tk">contact@ftpconnect.tk</a>,
     or use the form below:
