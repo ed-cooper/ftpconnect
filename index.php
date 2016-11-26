@@ -23,6 +23,7 @@
         
         <!--Scripts-->
         <script src="/assets/js/home.js" async></script>
+        <script src="/smooth-scroll/smooth-scroll.min.js"></script>
     </head>
     <body>
         <?php include_once($_SERVER['DOCUMENT_ROOT'].'/parts/analyticstracking.php') ?>
@@ -49,7 +50,7 @@
                 <p>Warning: Currently only uses standard FTP connection over http!</p>
             </form>
             <div id="start-down-container">
-                <a href="#main">
+                <a data-scroll href="#main">
                     <i id="start-down" class="fa fa-arrow-circle-o-down" aria-hidden="true"></i>
                 </a>
             </div>
@@ -63,5 +64,12 @@
             
         </div>
         <?php include $_SERVER['DOCUMENT_ROOT'].'/parts/footer.php'; ?>
+        <script>
+            // Initialise smooth scroll
+            smoothScroll.init({
+                speed: 400,
+                easing: 'easeOutQuad'
+            });
+        </script>
     </body>
 </html>	

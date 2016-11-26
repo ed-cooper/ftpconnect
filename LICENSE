@@ -29,7 +29,13 @@ For Font Awesome (assets/css/font.awesome.min.css):
 See http://fontawesome.io/license
 
 ========================================================================
-Fot PHPMailer (phpmailer/):
+For PHPMailer (phpmailer/):
 ========================================================================
 
 See phpmailer/LICENSE
+
+========================================================================
+For smooth-scroll (smooth-scroll/):
+========================================================================
+
+See smooth-scroll/LICENSE.md
