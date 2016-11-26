@@ -20,7 +20,7 @@
                 <a href="https://github.com/chooper100/ftpconnect" target="_blank">Github</a>
             </li>
         </ul>
-        <span id="copyright">&copy Chooper100, 2016</span>
+        <span id="copyright">&copy; Chooper100, 2016</span>
     </div>
 </div>
 <style>
