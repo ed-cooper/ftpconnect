@@ -5,11 +5,11 @@ $ftp_server = $_POST["ftphost"];
 
 if (isset($_POST["ftpssl"]) && $_POST["ftpssl"] == "on") {
     // Use FTP over SSL
-    echo "Using ftp over ssl";
+    echo "Using ftp over ssl\r\n";
     $conn_id = ftp_ssl_connect($ftp_server) or die("Could not connect to $ftp_server");
 } else {
     // User selected standard FTP
-    echo "Not using ftp over ssl";
+    echo "Not using ftp over ssl\r\n";
     $conn_id = ftp_connect($ftp_server) or die("Could not connect to $ftp_server");
 }
 
