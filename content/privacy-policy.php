@@ -3,7 +3,7 @@
 </h2>
 <p>
     This privacy policy is for this website
-    [ <a href="http://ftpconnect.tk">http://ftpconnect.tk</a> ]
+    [ <a href="https://ftpconnect.tk">https://ftpconnect.tk</a> ]
     served by Chooper100 and governs the privacy of its
     users who choose to use it.
 </p>
