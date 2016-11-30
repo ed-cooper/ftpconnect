@@ -76,7 +76,12 @@ RewriteEngine on
 
 #Redirect to non-www version of site
 RewriteCond %{HTTP_HOST} ^www.ftpconnect.tk [NC]
-RewriteRule ^(.*)$ http://ftpconnect.tk/$1 [L,R=301]
+RewriteRule ^(.*)$ https://ftpconnect.tk/$1 [L,R=301]
+
+#Redirect to https (but ignore on localhost)
+RewriteCond %{HTTP_HOST} !=ftpconnect
+RewriteCond %{HTTPS} !=on
+RewriteRule ^/?(.*) https://%{SERVER_NAME}/$1 [R,L]
 
 #Generic pages
 RewriteRule ^legal/?$ generic.php?resource=legal [NC,L]
