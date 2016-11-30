@@ -56,7 +56,17 @@
             </div>
         </div>
         <div id="main">
-            <div id="warning">
+            <?php
+            if (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] !== 'on') {
+                echo '<div id="no-https" class="message">
+                    <i class="fa fa-exclamation-circle" aria-hidden="true"></i>
+                    <b>You are not using HTTPS:</b>
+                    For better security, click <a href="https://ftpconnect.tk">here</a> to
+                    go to the https version of this site.
+                    </div>';
+            }
+            ?>
+            <div id="early-access" class="message">
                 <i class="fa fa-exclamation-triangle" aria-hidden="true"></i>
                 <b>Warning - Early access project:</b>
                 This project could contain broken or missing features
