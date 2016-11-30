@@ -23,7 +23,6 @@
         
         <!--Scripts-->
         <script src="/assets/js/home.js" async></script>
-        <script src="/smooth-scroll/smooth-scroll.min.js" async></script>
     </head>
     <body>
         <?php include_once($_SERVER['DOCUMENT_ROOT'].'/parts/analyticstracking.php') ?>
@@ -79,6 +78,7 @@
             
         </div>
         <?php include $_SERVER['DOCUMENT_ROOT'].'/parts/footer.php'; ?>
+        <script src="/smooth-scroll/smooth-scroll.min.js"></script>
         <script>
             // Initialise smooth scroll
             smoothScroll.init({
