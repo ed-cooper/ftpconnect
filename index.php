@@ -57,14 +57,19 @@
         </div>
         <div id="main">
             <?php
-            if (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] !== 'on') {
-                echo '<div id="no-https" class="message">
+                $html = '<div id="no-https" class="message">
                     <i class="fa fa-exclamation-circle" aria-hidden="true"></i>
                     <b>You are not using HTTPS:</b>
                     For better security, click <a href="https://ftpconnect.tk">here</a> to
                     go to the https version of this site.
                     </div>';
-            }
+                if (isset($_SERVER['HTTPS'])) {
+                    if ($_SERVER['HTTPS'] !== 'on') {
+                        echo $html;
+                    }
+                } else {
+                    echo $html;
+                }
             ?>
             <div id="early-access" class="message">
                 <i class="fa fa-exclamation-triangle" aria-hidden="true"></i>
