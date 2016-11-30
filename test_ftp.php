@@ -3,7 +3,16 @@ $ftp_user_name = $_POST["user"];
 $ftp_user_pass = $_POST["pass"];
 $ftp_server = $_POST["ftphost"];
 
-$conn_id = ftp_connect($ftp_server) or die("Could not connect to $ftp_server");
+if (isset($_POST["ftpssl"]) && $_POST["ftpssl"] == "on") {
+    // Use FTP over SSL
+    echo "Using ftp over ssl";
+    $conn_id = ftp_ssl_connect($ftp_server) or die("Could not connect to $ftp_server");
+} else {
+    // User selected standard FTP
+    echo "Not using ftp over ssl";
+    $conn_id = ftp_connect($ftp_server) or die("Could not connect to $ftp_server");
+}
+
 $login_result = ftp_login($conn_id, $ftp_user_name, $ftp_user_pass);
 
 if (!$login_result) {

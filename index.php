@@ -45,8 +45,13 @@
                     <label for="txtpass" class="control-label">FTP Password:</label>
                     <input type="password" class="form-control" id="txtpass" name="pass" />
                 </div>
+                <div class="form-group">
+                    <label class="control-label">
+                        <input type="checkbox" id="chkssl" name="ftpssl" <?php if (function_exists("ftp_ssl_connect")) { echo "checked"; } ?> />
+                        Use FTP over SSL
+                    </label>
+                </div>
                 <input type="submit" class="btn-submit" value="Go"/>
-                <p>Warning: Currently only uses standard FTP connection over http!</p>
             </form>
             <div id="start-down-container">
                 <a data-scroll href="#main">
