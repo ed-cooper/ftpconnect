@@ -20,7 +20,7 @@ $data = [
 
 $conn_id = false;
 
-if (isset($_POST["ftpssl"]) && $_POST["ftpssl"] == "on") {
+if (isset($_POST["ftpssl"]) && $_POST["ftpssl"] === "on") {
     // Use FTP over SSL
     
     // Check function exits
@@ -62,7 +62,7 @@ if ($conn_id) {
     // Connection failed
     
     // Only update message if not already set
-    if ($message == "") {
+    if ($message === "") {
         $message = "Could not connect to $ftp_server";
     }
 }
