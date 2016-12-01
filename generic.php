@@ -1,6 +1,15 @@
 <?php
 // Get display name of page for user
 $displayname = ucwords(str_replace("-", " ", $_GET['resource']));
+
+// Get document root
+$doc_root = "";
+if (is_dir($_SERVER['DOCUMENT_ROOT'])) {
+    $doc_root = $_SERVER['DOCUMENT_ROOT'];
+} else {
+    // Document root is invalid, kill page to prevent script injection
+    die("Document root is invalid.<br/>Please contact me at chooper100.scratch@gmail.com if this error persists.");
+}
 ?>
 <!DOCTYPE html>
 <html>
@@ -28,7 +37,7 @@ $displayname = ucwords(str_replace("-", " ", $_GET['resource']));
         <!--<script src="/assets/js/generic.js" async></script>-->
     </head>
     <body>
-        <?php include_once($_SERVER['DOCUMENT_ROOT'].'/parts/analyticstracking.php') ?>
+        <?php include_once($doc_root.'/parts/analyticstracking.php') ?>
         <div id="header">
             <h1>
                 <?php 
@@ -38,11 +47,11 @@ $displayname = ucwords(str_replace("-", " ", $_GET['resource']));
         </div>
         <div id="main">
             <?php
-                include $_SERVER['DOCUMENT_ROOT'].'/content/'.$_GET['resource'].'.php';
+                include $doc_root.'/content/'.$_GET['resource'].'.php';
             ?>
         </div>
         <?php
-            include $_SERVER['DOCUMENT_ROOT'].'/parts/footer.php';
+            include $doc_root.'/parts/footer.php';
         ?>
     </body>
 </html>

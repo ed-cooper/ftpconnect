@@ -1,3 +1,13 @@
+<?php
+// Get document root
+$doc_root = "";
+if (is_dir($_SERVER['DOCUMENT_ROOT'])) {
+    $doc_root = $_SERVER['DOCUMENT_ROOT'];
+} else {
+    // Document root is invalid, kill page to prevent script injection
+    die("Document root is invalid.<br/>Please contact me at chooper100.scratch@gmail.com if this error persists.");
+}
+?>
 <!DOCTYPE html>
 <html>
     <head>
@@ -25,7 +35,7 @@
         <script src="/assets/js/home.js" async></script>
     </head>
     <body>
-        <?php include_once($_SERVER['DOCUMENT_ROOT'].'/parts/analyticstracking.php') ?>
+        <?php include_once($doc_root.'/parts/analyticstracking.php') ?>
         <div id="start">
             <div id="start-left">
                 <h1>FTP Connect</h1>
@@ -82,7 +92,7 @@
             </div>
             
         </div>
-        <?php include $_SERVER['DOCUMENT_ROOT'].'/parts/footer.php'; ?>
+        <?php include $doc_root.'/parts/footer.php'; ?>
         <script src="/smooth-scroll/smooth-scroll.min.js"></script>
         <script>
             // Initialise smooth scroll
