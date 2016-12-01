@@ -18,9 +18,22 @@ $data = [
 
 // Create ftp connection
 
+$conn_id = false;
+
 if (isset($_POST["ftpssl"]) && $_POST["ftpssl"] == "on") {
     // Use FTP over SSL
-    $conn_id = @ftp_ssl_connect($ftp_server);
+    
+    // Check function exits
+    
+    if (function_exists("ftp_ssl_connect")) {
+        // Function exists; begin connection
+        
+        $conn_id = @ftp_ssl_connect($ftp_server);
+    } else {
+        // Function doesn't exist; display failiure message
+        
+        $message = "FTP over SSL not supported";
+    }
 } else {
     // Use standard FTP
     $conn_id = @ftp_connect($ftp_server);
@@ -48,7 +61,10 @@ if ($conn_id) {
 } else {
     // Connection failed
     
-    $message = "Could not connect to $ftp_server";
+    // Only update message if not already set
+    if ($message == "") {
+        $message = "Could not connect to $ftp_server";
+    }
 }
 
 // Write json output
