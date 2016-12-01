@@ -1,3 +1,6 @@
+<?php
+$allow_ssl = function_exists("ftp_ssl_connect");
+?>
 <form method="post" id="loginform" action="/api/login.php">
     <h3>Get started:</h3>
     <div class="form-group">
@@ -13,8 +16,8 @@
         <input type="password" class="form-control" id="txtpass" name="pass" />
     </div>
     <div class="form-group">
-        <label class="control-label">
-            <input type="checkbox" id="chkssl" name="ftpssl" <?php if (function_exists("ftp_ssl_connect")) { echo "checked"; } ?> />
+        <label class="control-label <?php if (!$allow_ssl) { echo "disabled"; }?>">
+            <input type="checkbox" id="chkssl" name="ftpssl" <?php echo ($allow_ssl ? "checked" : "disabled") ?> />
             Use FTP over SSL
         </label>
     </div>
