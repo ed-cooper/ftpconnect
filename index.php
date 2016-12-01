@@ -41,28 +41,6 @@ if (is_dir($_SERVER['DOCUMENT_ROOT'])) {
                 <h1>FTP Connect</h1>
                 <h2>The free and simple FTP client for you</h2>
             </div>
-<!--            <form method="post" id="start-form" action="test_ftp.php">
-                <h3>Get started:</h3>
-                <div class="form-group">
-                    <label for="txtftphost" class="control-label">FTP Host:</label>
-                    <input type="text" class="form-control" id="txtftphost" name="ftphost" />
-                </div>
-                <div class="form-group">
-                    <label for="txtuser" class="control-label">FTP Username:</label>
-                    <input type="text" class="form-control" id="txtuser" name="user" />
-                </div>
-                <div class="form-group">
-                    <label for="txtpass" class="control-label">FTP Password:</label>
-                    <input type="password" class="form-control" id="txtpass" name="pass" />
-                </div>
-                <div class="form-group">
-                    <label class="control-label">
-                        <input type="checkbox" id="chkssl" name="ftpssl" <?php if (function_exists("ftp_ssl_connect")) { echo "checked"; } ?> />
-                        Use FTP over SSL
-                    </label>
-                </div>
-                <input type="submit" class="btn-submit" value="Go"/>
-            </form>-->
             <?php include $doc_root.'/parts/loginform.php'; ?>
             <div id="start-down-container">
                 <a data-scroll href="#main">
