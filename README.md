@@ -13,8 +13,8 @@ I am now happy to begin accepting pull requests. Please be aware that any major 
 For now, we are using PHP version 5.6. As the project progresses, this may change.
 
 ## Test FTP Server
-This project does not currently use any ssl encryption on ftp connections.
-Therefore, you may wish to use a public FTP server for testing.
+For testing, you may wish to use a public FTP server to prevent loss of data on
+your own FTP server.
 
 http://www.rebex.net/ provide a read-only FTP server free of charge, which you can
 connect to with the following details:
