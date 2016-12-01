@@ -1,6 +1,9 @@
 <?php
+// Get resource url
+$resource_url = filter_input(INPUT_GET, 'resource', FILTER_SANITIZE_STRING);
+
 // Get display name of page for user
-$displayname = ucwords(str_replace("-", " ", $_GET['resource']));
+$displayname = ucwords(str_replace("-", " ", htmlspecialchars($resource_url)));
 
 // Get document root
 $doc_root = "";
@@ -47,7 +50,7 @@ if (is_dir($_SERVER['DOCUMENT_ROOT'])) {
         </div>
         <div id="main">
             <?php
-                include $doc_root.'/content/'.$_GET['resource'].'.php';
+                include $doc_root.'/content/'.$resource_url.'.php';
             ?>
         </div>
         <?php
