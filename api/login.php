@@ -70,5 +70,3 @@ if ($conn_id) {
 // Write json output
 
 echo json_encode($data);
-
-?>

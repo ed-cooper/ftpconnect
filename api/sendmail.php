@@ -53,4 +53,3 @@ if($mail->send()) {
 
 // Output result
 echo json_encode($data);
-?>
