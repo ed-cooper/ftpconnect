@@ -41,7 +41,7 @@ if (is_dir($_SERVER['DOCUMENT_ROOT'])) {
                 <h1>FTP Connect</h1>
                 <h2>The free and simple FTP client for you</h2>
             </div>
-            <form method="post" id="start-form" action="test_ftp.php">
+<!--            <form method="post" id="start-form" action="test_ftp.php">
                 <h3>Get started:</h3>
                 <div class="form-group">
                     <label for="txtftphost" class="control-label">FTP Host:</label>
@@ -62,7 +62,8 @@ if (is_dir($_SERVER['DOCUMENT_ROOT'])) {
                     </label>
                 </div>
                 <input type="submit" class="btn-submit" value="Go"/>
-            </form>
+            </form>-->
+            <?php include $doc_root.'/parts/loginform.php'; ?>
             <div id="start-down-container">
                 <a data-scroll href="#main">
                     <i id="start-down" class="fa fa-arrow-circle-o-down" aria-hidden="true"></i>
