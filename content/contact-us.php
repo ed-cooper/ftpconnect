@@ -6,7 +6,7 @@
     <a href="mailto:contact@ftpconnect.tk">contact@ftpconnect.tk</a>,
     or use the form below:
 </p>
-<form id="emailform" method="post" action="/sendmail.php">
+<form id="emailform" method="post" action="/api/sendmail.php">
     <div class="form-group">
         <label class="control-label" for="emailform-name">Name:</label>
         <input type="text" class="form-control" name="name" id="emailform-name" />
