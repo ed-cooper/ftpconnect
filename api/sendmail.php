@@ -2,24 +2,6 @@
 // Mark output as json
 header('Content-Type: application/json');
 
-// Get document root
-$doc_root = "";
-if (is_dir($_SERVER['DOCUMENT_ROOT'])) {
-    $doc_root = $_SERVER['DOCUMENT_ROOT'];
-} else {
-    // Document root is invalid; kill page to prevent script injection 
-    die(json_encode(
-            [ 
-                "success" => false,
-                "message" => "Document root is invalid. Please contact me at "
-                             . "chooper100.scratch@gmail.com if this error persists."
-            ]
-    ));
-}
-
-// Load phpmailer
-require $doc_root . '/phpmailer/PHPMailerAutoload.php';
-
 // Create output
 $success = false;
 $message = "";
@@ -27,6 +9,22 @@ $data = [
     "success" => & $success,
     "message" => & $message
 ];
+
+// Get document root
+$doc_root = "";
+if (is_dir($_SERVER['DOCUMENT_ROOT'])) {
+    $doc_root = $_SERVER['DOCUMENT_ROOT'];
+} else {
+    // Document root is invalid; kill page to prevent script injection
+    
+    $message = "Document root is invalid. Please contact me at "
+               . "chooper100.scratch@gmail.com if this error persists.";
+    
+    die(json_encode($data));
+}
+
+// Load phpmailer
+require $doc_root . '/phpmailer/PHPMailerAutoload.php';
 
 // Create new mail object
 $mail = new PHPMailer;
