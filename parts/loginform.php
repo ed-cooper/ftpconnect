@@ -1,4 +1,4 @@
-<form method="post" id="loginform" action="test_ftp.php">
+<form method="post" id="loginform" action="/api/login.php">
     <h3>Get started:</h3>
     <div class="form-group">
         <label for="txtftphost" class="control-label">FTP Host:</label>
