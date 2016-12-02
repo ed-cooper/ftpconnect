@@ -12,16 +12,16 @@
         <input type="text" class="form-control" name="name" id="emailform-name" />
     </div>
     <div class="form-group">
-        <label class="control-label" for="emailform-email">Email:</label>
-        <input type="email" class="form-control" name="email" id="emailform-email" />
+        <label class="control-label" for="emailform-email">Email:*</label>
+        <input type="email" class="form-control" name="email" id="emailform-email" required />
     </div>
     <div class="form-group">
         <label class="control-label" for="emailform-subject">Subject:</label>
         <input type="text" class="form-control" name="subject" id="emailform-subject" />
     </div>
     <div class="form-group">
-        <label class="control-label" for="emailform-message">Message:</label>
-        <textarea class="form-control" name="message" id="emailform-message" rows="4"></textarea>
+        <label class="control-label" for="emailform-message">Message:*</label>
+        <textarea class="form-control" name="message" id="emailform-message" rows="4" required ></textarea>
     </div>
     <input type="submit" class="btn-submit" value="Send" />
 </form>
@@ -62,6 +62,14 @@
         background-color: #ecf2f4;
     }
     
+    .invalid {
+        background-color: #ff9999;
+    }
+    
+    .form-control.invalid:focus {
+        background-color: #ff8080;
+    }
+    
     .btn-submit {
         background-color: #f5f9fb;
         border: none;
@@ -75,3 +83,34 @@
         background-color: #ecf2f4;
     }
 </style>
+<script>
+    var emailform = document.getElementById("emailform");
+    var emailinput = document.getElementById("emailform-email");
+    var messageinput = document.getElementById("emailform-message");
+    
+    emailform.onsubmit=function(e) {
+        // Check required fields (should be done by browser but use JS if not)
+        if (emailinput.value === "") { // No email given
+            emailinput.className  = "form-control invalid";
+            return;
+        } else {
+            emailinput.className  = "form-control";
+        }
+        
+        if (messageinput.value === "") { // No message given
+            messageinput.className  = "form-control invalid";
+            return;
+        } else {
+            messageinput.className  = "form-control";
+        }
+        
+        // Passed validation
+        
+        // Create request
+        var request = new XMLHttpRequest();
+        request.open("POST", "/api/sendmail.php", true);
+        request.send(new FormData(emailform));
+        e.preventDefault = false;
+        return false;
+    }
+</script>
