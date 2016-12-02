@@ -24,6 +24,9 @@
         <textarea class="form-control" name="message" id="emailform-message" rows="4" required ></textarea>
     </div>
     <input type="submit" class="btn-submit" value="Send" />
+    <span class="small">
+        * Required
+    </span>
 </form>
 <style>
     #emailform {
@@ -81,6 +84,12 @@
     
     .btn-submit:hover {
         background-color: #ecf2f4;
+    }
+    
+    .small {
+        font-size: 9pt;
+        display: block;
+        float: right;
     }
 </style>
 <script>
