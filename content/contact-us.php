@@ -117,8 +117,21 @@
         
         // Create request
         var request = new XMLHttpRequest();
+        
+        request.onload = function() {
+            var response = JSON.parse(request.responseText);
+            if (response.success) {
+                alert("Email sent successfully!");
+            } else {
+                alert(response.message)
+            }
+        };
+        
+        request.onerror = Error;
+        
         request.open("POST", "/api/sendmail.php", true);
         request.send(new FormData(emailform));
+        
         e.preventDefault = false;
         return false;
     }
