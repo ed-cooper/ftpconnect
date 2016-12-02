@@ -127,7 +127,9 @@
             }
         };
         
-        request.onerror = Error;
+        request.onerror = function() {
+            alert("Error sending web request. Please try again later.");
+        };
         
         request.open("POST", "/api/sendmail.php", true);
         request.send(new FormData(emailform));
