@@ -23,6 +23,17 @@ if (is_dir($_SERVER['DOCUMENT_ROOT'])) {
     die(json_encode($data));
 }
 
+// Validate request
+require $doc_root . '/api/request-validator.php';
+$request_error = IsBadRequest(0, "POST", ["name", "email", "subject", "message"]);
+if ($request_error) {
+    // Request is invalid; kill page
+    
+    $message = "Bad request: ".$request_error;
+    
+    die(json_encode($data));
+}
+
 // Load phpmailer
 require $doc_root . '/phpmailer/PHPMailerAutoload.php';
 
