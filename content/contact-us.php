@@ -133,8 +133,7 @@
         
         request.open("POST", "/api/sendmail.php", true);
         request.send(new FormData(emailform));
-        
-        e.preventDefault = false;
+        e.preventDefault();
         return false;
     }
 </script>

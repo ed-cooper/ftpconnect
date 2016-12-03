@@ -45,7 +45,7 @@ loginform.onsubmit = function(e) {
     request.open("POST", "/api/login.php", true);
     request.send(new FormData(loginform));
     
-    e.preventDefault = true;
+    e.preventDefault();
     return false;
 };
 </script>
