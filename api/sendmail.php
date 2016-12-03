@@ -57,7 +57,7 @@ if($mail->send()) {
     $success = true;
     $message = "Message sent successfully";
 } else {
-    $message = "Error: " . $mail->ErrorInfo;
+    $message = $mail->ErrorInfo;
 }
 
 // Output result

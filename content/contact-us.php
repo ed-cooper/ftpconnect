@@ -123,7 +123,7 @@
             if (response.success) {
                 alert("Email sent successfully!");
             } else {
-                alert(response.message)
+                alert("Error sending email: " + response.message)
             }
         };
         
