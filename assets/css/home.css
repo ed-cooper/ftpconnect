@@ -89,6 +89,14 @@ h3, h4 {
 .form-control:focus {
     background-color: #ecf2f4;
 }
+
+.invalid {
+    background-color: #ff9999;
+}
+
+.form-control.invalid:focus {
+    background-color: #ff8080;
+}
     
 .btn-submit {
     background-color: #f5f9fb;

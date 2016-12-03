@@ -5,7 +5,7 @@ $allow_ssl = function_exists("ftp_ssl_connect");
     <h3>Get started:</h3>
     <div class="form-group">
         <label for="txtftphost" class="control-label">FTP Host:</label>
-        <input type="text" class="form-control" id="txtftphost" name="ftphost" />
+        <input type="text" class="form-control" id="txtftphost" name="ftphost" required />
     </div>
     <div class="form-group">
         <label for="txtuser" class="control-label">FTP Username:</label>
@@ -25,8 +25,20 @@ $allow_ssl = function_exists("ftp_ssl_connect");
 </form>
 <script>
 var loginform = document.getElementById("loginform");
+var hostinput = document.getElementById("txtftphost");
 
 loginform.onsubmit = function(e) {
+    // Check required fields (should be done by browser but use JS if not)
+    if (hostinput.value === "") {
+        hostinput.className  = "form-control invalid";
+        return false;
+    } else {
+        hostinput.className  = "form-control";
+    }
+    
+    // Passed validation
+    
+    // Create request
     var request = new XMLHttpRequest();
         
     request.onload = function() {
