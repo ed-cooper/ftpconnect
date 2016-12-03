@@ -31,12 +31,9 @@ loginform.onsubmit = function(e) {
     e.preventDefault();
     
     // Check required fields (should be done by browser but use JS if not)
-    if (hostinput.value === "") {
-        hostinput.className  = "form-control invalid";
+    
+    if (checkIsEmpty(hostinput))
         return false;
-    } else {
-        hostinput.className  = "form-control";
-    }
     
     // Passed validation
     
@@ -61,4 +58,13 @@ loginform.onsubmit = function(e) {
     
     return false;
 };
+        
+function checkIsEmpty(input) {
+    if (input.value === "") {
+        input.className  = "form-control invalid";
+        return true;
+    }
+    input.className  = "form-control";
+    return false;
+}
 </script>

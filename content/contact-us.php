@@ -101,19 +101,11 @@
         e.preventDefault();
         
         // Check required fields (should be done by browser but use JS if not)
-        if (emailinput.value === "") { // No email given
-            emailinput.className  = "form-control invalid";
+        if (checkIsEmpty(emailinput))
             return false;
-        } else {
-            emailinput.className  = "form-control";
-        }
         
-        if (messageinput.value === "") { // No message given
-            messageinput.className  = "form-control invalid";
+        if (checkIsEmpty(messageinput))
             return false;
-        } else {
-            messageinput.className  = "form-control";
-        }
         
         // Passed validation
         
@@ -135,6 +127,15 @@
         
         request.open("POST", "/api/sendmail.php", true);
         request.send(new FormData(emailform));
+        return false;
+    }
+        
+    function checkIsEmpty(input) {
+        if (input.value === "") {
+            input.className  = "form-control invalid";
+            return true;
+        }
+        input.className  = "form-control";
         return false;
     }
 </script>
