@@ -32,7 +32,7 @@ if (is_dir($_SERVER['DOCUMENT_ROOT'])) {
         <link rel="stylesheet" href="/assets/css/font-awesome.min.css">
         
         <!--Scripts-->
-        <script src="/assets/js/home.js" async></script>
+        <!--<script src="/assets/js/home.js" async></script>-->
     </head>
     <body>
         <?php include_once($doc_root.'/parts/analyticstracking.php') ?>
