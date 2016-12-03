@@ -28,6 +28,8 @@ var loginform = document.getElementById("loginform");
 var hostinput = document.getElementById("txtftphost");
 
 loginform.onsubmit = function(e) {
+    e.preventDefault();
+    
     // Check required fields (should be done by browser but use JS if not)
     if (hostinput.value === "") {
         hostinput.className  = "form-control invalid";
@@ -57,7 +59,6 @@ loginform.onsubmit = function(e) {
     request.open("POST", "/api/login.php", true);
     request.send(new FormData(loginform));
     
-    e.preventDefault();
     return false;
 };
 </script>
