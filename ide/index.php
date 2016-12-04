@@ -5,6 +5,12 @@
         <title>FTP Connect IDE</title>
     </head>
     <body>
-        Nothing here yet!
+        <?php
+        require '../api/sessionmanager.php';
+        
+        SessionManager::sessionStart('FTP');
+        
+        var_dump($_SESSION);
+        ?>
     </body>
 </html>

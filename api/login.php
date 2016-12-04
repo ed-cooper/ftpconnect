@@ -2,6 +2,10 @@
 // Mark output as json
 header('Content-Type: application/json');
 
+// Load session manager
+
+require 'sessionmanager.php';
+
 // Create output
 
 $success = false;
@@ -75,6 +79,12 @@ if ($conn_id) {
     if (@ftp_login($conn_id, $ftp_user_name, $ftp_user_pass)) {
         // User successfully logged in
 
+        SessionManager::sessionStart('FTP');
+        
+        $_SESSION['host'] = $ftp_server;
+        $_SESSION['user'] = $ftp_user_name;
+        $_SESSION['pass'] = $ftp_user_pass;
+        
         $success = true;
         $message = "Login successful";
     } else {
