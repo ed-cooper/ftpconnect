@@ -43,7 +43,7 @@ loginform.onsubmit = function(e) {
     request.onload = function() {
         var response = JSON.parse(request.responseText);
         if (response.success) {
-            alert("Logged in successfully!");
+            window.location = "/ide/";
         } else {
             alert("Error logging in: " + response.message);
         }
