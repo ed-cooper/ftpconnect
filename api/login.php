@@ -46,12 +46,13 @@ if ($request_error) {
 $ftp_user_name = $_POST["user"];
 $ftp_user_pass = $_POST["pass"];
 $ftp_server = $_POST["ftphost"];
+$ftp_ssl = isset($_POST["ftpssl"]) && $_POST["ftpssl"] === "on";
 
 // Create ftp connection
 
 $conn_id = false;
 
-if (isset($_POST["ftpssl"]) && $_POST["ftpssl"] === "on") {
+if ($ftp_ssl) {
     // Use FTP over SSL
     
     // Check function exits
@@ -84,6 +85,7 @@ if ($conn_id) {
         $_SESSION['host'] = $ftp_server;
         $_SESSION['user'] = $ftp_user_name;
         $_SESSION['pass'] = $ftp_user_pass;
+        $_SESSION['ssl'] = $ftp_ssl;
         
         $success = true;
         $message = "Login successful";
